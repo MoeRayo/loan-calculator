@@ -1,0 +1,27 @@
+{
+  "name": "loan-calculator",
+  "version": "1.0.0",
+  "description": "This is a simple loan calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoeRayo/loan-calculator.git"
+  },
+  "keywords": [
+    "loan",
+    "calculator",
+    "javascript"
+  ],
+  "author": "Moronfolu Olufunke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoeRayo/loan-calculator/issues"
+  },
+  "homepage": "https://github.com/MoeRayo/loan-calculator#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
