@@ -46,3 +46,12 @@ function save(amount, apr, years, zipcode) {
 		localStorage.loanZipcode = zipcode;
 	}
 }
+// function to add the input fields on initial load of the page
+window.onload = function () {
+	if (window.localStorage && localStorage.loanAmount) {
+		amount = localStorage.loanAmount;
+		apr = localStorage.loanApr;
+		years = localStorage.loanYears;
+		zipcode = localStorage.loanZipcode;
+	}
+};
