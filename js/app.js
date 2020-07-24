@@ -35,3 +35,23 @@ function calculate() {
 		chart();
 	}
 }
+
+// local storage
+
+function save(amount, apr, years, zipcode) {
+	if (window.localStorage) {
+		localStorage.loanAmount = amount;
+		localStorage.loanApr = apr;
+		localStorage.loanYears = years;
+		localStorage.loanZipcode = zipcode;
+	}
+}
+// function to add the input fields on initial load of the page
+window.onload = function () {
+	if (window.localStorage && localStorage.loanAmount) {
+		amount = localStorage.loanAmount;
+		apr = localStorage.loanApr;
+		years = localStorage.loanYears;
+		zipcode = localStorage.loanZipcode;
+	}
+};
